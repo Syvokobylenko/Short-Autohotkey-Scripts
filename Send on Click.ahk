@@ -3,8 +3,7 @@ Count = 1
 Loop
 	{
 	Key := SubStr(String, Count, 1)
-	KeyWait z
-	KeyWait z, d
+	Input, TemplateVar, L1
 	SetKeyDelay, 0
 	Send, %key%
 	Count += 1
