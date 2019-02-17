@@ -1,4 +1,4 @@
 # Short-Autohotkey-Scripts
-To execute you need https://github.com/AutoHotkey/AutoHotkey
+To execute you need https://www.autohotkey.com/download/ahk.zip
 
 This is mostly my backup but feel free to use it.
