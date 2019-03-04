@@ -13,4 +13,8 @@ Your Reality - Full Auto.ahk - This is full automated bot based on imagesearch t
 
 Your Reality - Only Piano.ahk - This is Send on Click.ahk but with the String being "Your Reality" default binding keys to play on a piano.
 
-findmouse.ahk - It will print on the screen a mouse position one second after pressing Ctrl + Z.
+Findmouse.ahk - It will print on the screen a mouse position one second after pressing Ctrl + Z.
+
+Mastery on skill.ahk - Sends and deletes p,o,l,k or j at random whenever you press q,w or e. Whenever you press R, D or F sends and deletes i. Usefull for emotes in League of Legends. Known issue: Pressing shift + Q/W/E/R/D/F will sometimes release shift.
+
+Copy Persistent.ahk - Used to make a backup of persistent of Monika After Story. Run it on startup and you will get one backup per day (there is a limit 1 per day to not flood your drive.)
