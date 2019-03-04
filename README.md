@@ -15,6 +15,8 @@ Your Reality - Only Piano.ahk - This is Send on Click.ahk but with the String be
 
 Findmouse.ahk - It will print on the screen a mouse position one second after pressing Ctrl + Z.
 
-Mastery on skill.ahk - Sends and deletes p,o,l,k or j at random whenever you press q,w or e. Whenever you press R, D or F sends and deletes i. Usefull for emotes in League of Legends. Known issue: Pressing shift + Q/W/E/R/D/F will sometimes release shift.
+Mastery on skill.ahk - Sends and deletes p,o,l,k or j at random whenever you press q,w or e. Whenever you press R, D or F sends and deletes i. Usefull for emotes in League of Legends. Known issue: Pressing shift + Q/W/E/R/D/F will sometimes release shift but still send the random/i key.
 
 Copy Persistent.ahk - Used to make a backup of persistent of Monika After Story. Run it on startup and you will get one backup per day (there is a limit 1 per day to not flood your drive.)
+
+Hiragana Training.ahk - Hiragana knowledge quiz. For now it only has hiragana i personally strugle with. TODO: All of hiragana. Make it count mistakes and save them in ini file with the hiragana letter you made mistake at.
