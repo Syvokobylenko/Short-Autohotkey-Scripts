@@ -20,3 +20,5 @@ Mastery on skill.ahk - Sends and deletes p,o,l,k or j at random whenever you pre
 Copy Persistent.ahk - Used to make a backup of persistent of Monika After Story. Run it on startup and you will get one backup per day (there is a limit 1 per day to not flood your drive.)
 
 Hiragana Training.ahk - Hiragana knowledge quiz. For now it only has hiragana i personally strugle with. TODO: All of hiragana. Make it count mistakes and save them in ini file with the hiragana letter you made mistake at.
+
+Rubic's cube guide.png - This is not a script but a memo for solving rubic's cube. Assets used mostly from http://www.rubiksplace.com/
