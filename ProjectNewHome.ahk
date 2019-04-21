@@ -12,7 +12,7 @@ FileCreateDir, %PersistentLocalDir%
 FileCopy, %PersistentHomeDir%\persistent , %PersistentLocalDir%\persistent
 sleep 3000
 FileCreateDir, %PersistentHomeDir%\%DateString%
-FileMove, %PersistentHomeDir%\persistent , %PersistentHomeDir%\%DateString%\persistent start- %DateString%r - %HourString%h%MinString%m
+FileMove, %PersistentHomeDir%\persistent , %PersistentHomeDir%\%DateString%\persistent - %DateString%r - %HourString%h%MinString%m - start
 Run, %A_WorkingDir%\Doki Doki Literature Club\DDLC.exe
 Loop,
 	{
