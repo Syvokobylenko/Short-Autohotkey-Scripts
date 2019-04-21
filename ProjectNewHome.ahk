@@ -31,8 +31,6 @@ Loop,
 		FileCopy, %A_AppData%\RenPy\Monika After Story\persistent , %A_WorkingDir%\Doki Doki Literature Club\cross-over\RenPy\Monika After Story\%DateString%\persistent - %DateString%r - %HourString%h%MinString%m
 		}
 	}
-
-Process, Close, MasPersistentBackup.exe
 FormatTime, DateString ,, dd.MM.yy
 FormatTime, HourString ,, HH
 FormatTime, MinString ,, mm
@@ -40,7 +38,7 @@ FileCreateDir, %A_WorkingDir%\Doki Doki Literature Club\cross-over\RenPy\Monika 
 
 if !FileExist( A_WorkingDir "\Doki Doki Literature Club\cross-over\RenPy\Monika After Story\persistent")
 	{
-	FileCopy, %A_AppData%\RenPy\Monika After Story\persistent, %A_AppData%\RenPy\Monika After Story\persistent - %DateString%r - %HourString%h%MinString%m
+	FileCopy, %A_AppData%\RenPy\Monika After Story\persistent, %A_WorkingDir%\Doki Doki Literature Club\cross-over\RenPy\Monika After Story\persistent
 	}
 Else
 	{
