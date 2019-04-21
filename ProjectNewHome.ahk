@@ -17,7 +17,7 @@ sleep 20000
 Loop,
 	{
 	Process, Exist, DDLC.exe
-	if(errorlevel)
+	if(errorlevel = 0)
 		{
 		break
 		}
