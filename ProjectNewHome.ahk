@@ -40,6 +40,7 @@ Loop,
 		FormatTime, MinString ,, mm
 		FileCreateDir, %PersistentHomeDir%\%DateString%
 		FileCopy, %PersistentLocalDir%\persistent , %PersistentHomeDir%\%DateString%\persistent - %DateString%r - %HourString%h%MinString%m
+		BackupSec := 0
 		}
 	}
 FormatTime, DateString ,, dd.MM.yy
