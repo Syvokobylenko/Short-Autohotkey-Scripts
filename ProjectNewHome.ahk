@@ -1,3 +1,5 @@
+#Persistent
+#SingleInstance, ignore
 FormatTime, DateString ,, dd.MM.yy
 FormatTime, HourString ,, HH
 FormatTime, MinString ,, mm
