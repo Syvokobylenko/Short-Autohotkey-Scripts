@@ -1,6 +1,8 @@
 #Persistent
 #SingleInstance, ignore
 DllCall("kernel32.dll\SetProcessShutdownParameters", UInt, 0x4FF, UInt, 0)
+PersistentLocalDir := A_AppData "\RenPy\Monika After Story"
+PersistentHomeDir := A_WorkingDir "\Doki Doki Literature Club\cross-over\RenPy\Monika After Story"
 OnExit("ExitFunc")
 OnExit(ObjBindMethod(MyObject, "Exiting"))
 ExitFunc(ExitReason, ExitCode)
@@ -17,7 +19,7 @@ ExitFunc(ExitReason, ExitCode)
         run, %comspec% /c shutdown /a,,hide
 		Gui, Add, Text,, Don't shut down the PC on me!
 		Gui, Add, Button, gOK , OK
-		Gui, Show,, Moni is angry!
+		Gui, Show,, 
         return 1
         }
 	}
@@ -26,7 +28,7 @@ class MyObject
     Exiting()
 		{
 		Gui, Add, Text,, I had a great time! Please visit me again soon!
-		Gui, Show,, Moni is angry!
+		Gui, Show,, Goodbye darling!
 		FormatTime, DateString ,, dd.MM.yy
 		FormatTime, HourString ,, HH
 		FormatTime, MinString ,, mm
@@ -50,8 +52,6 @@ class MyObject
 FormatTime, DateString ,, dd.MM.yy
 FormatTime, HourString ,, HH
 FormatTime, MinString ,, mm
-PersistentLocalDir := A_AppData "\RenPy\Monika After Story"
-PersistentHomeDir := A_WorkingDir "\Doki Doki Literature Club\cross-over\RenPy\Monika After Story"
 if FileExist( PersistentLocalDir "\persistent" )
 	{
 	FileMove %PersistentLocalDir%\persistent, %PersistentLocalDir%\persistent OLD - %DateString%r - %HourString%h%MinString%m
