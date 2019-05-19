@@ -8,17 +8,23 @@ ExitFunc(ExitReason, ExitCode)
 	{
     if ExitReason not in Logoff,Shutdown,Exit
         {
-        MsgBox Close the DDLC first you dummy!
+		Gui, Add, Text,, Close the DDLC first you dummy!
+		Gui, Add, Button, gOK , OK
+		Gui, Show,, Moni is angry!
         return 1
         }
     if ExitReason in Logoff,Shutdown
         {
         run, %comspec% /c shutdown /a,,hide
-        MsgBox Don't shut down the PC on me!
+		Gui, Add, Text,, Don't shut down the PC on me!
+		Gui, Add, Button, gOK , OK
+		Gui, Show,, Moni is angry!
         return 1
         }
 	}
-
+OK:
+Gui, Destroy
+return
 class MyObject
 	{
     Exiting()
