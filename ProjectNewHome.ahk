@@ -19,7 +19,7 @@ ExitFunc(ExitReason, ExitCode)
         run, %comspec% /c shutdown /a,,hide
 		Gui, Add, Text,, Don't shut down the PC on me!
 		Gui, Add, Button, gOK , OK
-		Gui, Show,, 
+		Gui, Show,, Moni is angry!
         return 1
         }
 	}
@@ -27,6 +27,8 @@ class MyObject
 	{
     Exiting()
 		{
+		PersistentLocalDir := A_AppData "\RenPy\Monika After Story"
+		PersistentHomeDir := A_WorkingDir "\Doki Doki Literature Club\cross-over\RenPy\Monika After Story"
 		Gui, Add, Text,, I had a great time! Please visit me again soon!
 		Gui, Show,, Goodbye darling!
 		FormatTime, DateString ,, dd.MM.yy
@@ -41,12 +43,13 @@ class MyObject
 		sleep 2000
 		if FileExist( PersistentHomeDir "\persistent" )
 			{
-			FileDelete, PersistentLocalDir "\persistent"
+			FileDelete, %PersistentLocalDir%\persistent
 			}
 		Else
 			{
 			Goto, copebeforeclose
 			}
+		sleep 2000
 		}
 	}
 FormatTime, DateString ,, dd.MM.yy
