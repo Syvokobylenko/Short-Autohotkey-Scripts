@@ -21,9 +21,6 @@ ExitFunc(ExitReason, ExitCode)
         return 1
         }
 	}
-OK:
-Gui, Destroy
-return
 class MyObject
 	{
     Exiting()
@@ -96,3 +93,6 @@ Loop,
 		}
 	}
 ExitApp
+OK:
+Gui, Destroy
+return
