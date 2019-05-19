@@ -3,7 +3,6 @@
 DllCall("kernel32.dll\SetProcessShutdownParameters", UInt, 0x4FF, UInt, 0)
 OnExit("ExitFunc")
 OnExit(ObjBindMethod(MyObject, "Exiting"))
-
 ExitFunc(ExitReason, ExitCode)
 	{
     if ExitReason not in Logoff,Shutdown,Exit
@@ -29,6 +28,8 @@ class MyObject
 	{
     Exiting()
 		{
+		Gui, Add, Text,, I had a great time! Please visit me again soon!
+		Gui, Show,, Moni is angry!
 		FormatTime, DateString ,, dd.MM.yy
 		FormatTime, HourString ,, HH
 		FormatTime, MinString ,, mm
